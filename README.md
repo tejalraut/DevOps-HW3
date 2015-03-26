@@ -23,6 +23,7 @@ The following functions are implemented for a simple web server:
 
 4. upload
 Images can be uploaded to any of the web server using the command:
+	
 	curl -F "image=@./img/morning.jpg" localhost:300[3/4]/upload
 
 5. meow
