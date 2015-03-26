@@ -1,4 +1,4 @@
-##Infrastucture fluency (DevOps HW 3)
+##Infrastructure fluency (DevOps HW 3)
 =========================
 Name: Tejal Raut
 
