@@ -9,28 +9,7 @@ var recentList = null
 var currentServer = null;
 // REDIS
 var client = redis.createClient(6379, '127.0.0.1', {})
-//client.set("key", "value");
-//client.get("key", function(err,value){ console.log(value)});
 
-//client.on('error', function(error)
-//{
-//	console.log("Error while connecting the socket connection");
-//});
-
-//client.set('key', 'value');
-//client.get('key', function(err,value)
-//{
-//	console.log('The value is: ' + value);
-//});
-
-// WEB ROUTES
-
-// Add hook to make it easier to get all visited URLS.
-app.use(function(req, res, next) 
- {
- 	console.log(client.rpoplpush("servers","servers"));
- 	next(); // Passing the request to the next handler in the stack.
- });
 
 app.get('/', function(req, res) {
 	client.lrange("servers", 0, 0, function(err,reply){
@@ -101,6 +80,12 @@ app.get('/remove', function(req, res) {
 		})
 	})
 })
+
+app.use(function(req, res, next) 
+ {
+ 	console.log(client.rpoplpush("servers","servers"));
+ 	next(); // Passing the request to the next handler in the stack.
+ });
 
 var server = app.listen(3007, function () {
    

@@ -22,7 +22,7 @@ var client = redis.createClient(6379, '127.0.0.1', {})
 //});
 // WEB ROUTES
 
-// Add hook to make it easier to get all visited URLS.
+// Hooks to get all visited URLS.
 app.use(function(req, res, next) 
  {
 	//console.log(count++,req.method, req.url);
