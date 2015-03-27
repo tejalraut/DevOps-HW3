@@ -46,6 +46,8 @@ Images can be uploaded to any of the web server using the command:
 	
 	curl -F "image=@./img/morning.jpg" localhost:300[3/4]/upload
 
+A post function is implemented to handle the post request to the web server.
+
 5. meow
 
 `/meow` displays the most recent uploaded image to the client. The function is implemented as:
