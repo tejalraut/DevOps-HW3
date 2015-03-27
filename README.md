@@ -26,12 +26,12 @@ A message 'set function. key is set' is shown to the client. Code snippet:
 ![Screenshot](code snippets/set function.png)
 
 
-** get
+* *get*
 
 When `/get` is visited, the key is fetched, and value is sent back to the client. After the key is expired, it displays null to the client. The code snippet implementing this function is:
 ![Screenshot](code snippets/get function.png)
 
-** recent
+* *recent*
 
 When `/recent`is visited, the most recently visited 5 sites are displayed. The hook is implemented as follows:
 ![Screenshot](code snippets/recent hook.png)
@@ -40,21 +40,21 @@ The recent function is implemented as:
 ![Screenshot](code snippets/recent function.png)
 
 
-4. upload
+* *upload*
 
 Images can be uploaded to any of the web server using the command:
 	
-	curl -F "image=@./img/morning.jpg" localhost:300[3/4]/upload
+	curl -F "image=@./img/morning.jpg" localhost:300(3/4)/upload
 
 A post function is implemented to handle the post request to the web server.
 
-5. meow
+* *meow*
 
 `/meow` displays the most recent uploaded image to the client. The function is implemented as:
 ![Screenshot](code snippets/meow function.png)
 
 
-6. remove
+* *remove*
 
 `/remove` removes the image from the queue and displays 
 ![Screenshot](code snippets/remove function.png)
