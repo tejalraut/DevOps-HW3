@@ -110,22 +110,12 @@ var server = app.listen(3007, function () {
 
    client.lpush("servers",'3003', function(err, reply){
    		if(err)	throw err
-   		client.ltrim("servers", 0, 2);
+   		client.ltrim("servers", 0, 1);
    		//console.log(reply);
    });
    client.lpush("servers",'3004', function(err, reply){
    		if(err) throw err
-   		client.ltrim("servers", 0, 2);
+   		client.ltrim("servers", 0, 1);
    		//console.log(reply);
    });
-
-   client.lpush("servers",'3005', function(err, reply){
-   		if(err) throw err
-   		client.ltrim("servers", 0, 2);
-   		//console.log(reply);
-   });
-   
-   client.lrange("servers", 0, -1, function(err, reply){
-  	//console.log(reply);
- })
 })
