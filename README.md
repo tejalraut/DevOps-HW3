@@ -17,7 +17,7 @@ A simple web server is set as:
 The following functions are implemented for a simple web server:
 ![](code snippets/Simple webserver.png)
 
-** set
+* *set*
 
 When `/set` is visited, a new key is set with the value:
 > "this message will self-destruct in 10 seconds"
