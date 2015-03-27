@@ -15,7 +15,7 @@ Implementation (Option2)
 A simple web server is set as:
 
 The following functions are implemented for a simple web server:
-![Screenshot](code snippets/Simple webserver.png)
+![](code snippets/Simple webserver.png)
 
 1. set
 
