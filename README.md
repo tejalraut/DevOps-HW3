@@ -17,7 +17,7 @@ A simple web server is set as:
 The following functions are implemented for a simple web server:
 ![](code snippets/Simple webserver.png)
 
-1. set
+** set
 
 When `/set` is visited, a new key is set with the value:
 > "this message will self-destruct in 10 seconds"
@@ -26,12 +26,12 @@ A message 'set function. key is set' is shown to the client. Code snippet:
 ![Screenshot](code snippets/set function.png)
 
 
-2. get
+** get
 
 When `/get` is visited, the key is fetched, and value is sent back to the client. After the key is expired, it displays null to the client. The code snippet implementing this function is:
 ![Screenshot](code snippets/get function.png)
 
-3. recent
+** recent
 
 When `/recent`is visited, the most recently visited 5 sites are displayed. The hook is implemented as follows:
 ![Screenshot](code snippets/recent hook.png)
