@@ -12,6 +12,7 @@ Implementation (Option2)
 * The proxy is set on localhost:3007
 
 ### Web server working
+A simple web server is set as:
 
 The following functions are implemented for a simple web server:
 
@@ -20,7 +21,7 @@ The following functions are implemented for a simple web server:
 When `/set` is visited, a new key is set with the value:
 > "this message will self-destruct in 10 seconds"
 
-Code snippet:
+A message 'set function. key is set' is shown to the client. Code snippet:
 
 
 2. get
@@ -46,7 +47,7 @@ Images can be uploaded to any of the web server using the command:
 
 6. remove
 
- `/remove` removes the image from the queue and displays 
+`/remove` removes the image from the queue and displays 
 
 ### Redis
 Redis client is configured as:
