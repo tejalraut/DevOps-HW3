@@ -28,13 +28,16 @@ A message 'set function. key is set' is shown to the client. Code snippet:
 
 2. get
 
-When `/get` is visited, the key is fetched, and value is sent back to the client. After the key is expired, it displays null to the client. The code snippet which does this function is:
+When `/get` is visited, the key is fetched, and value is sent back to the client. After the key is expired, it displays null to the client. The code snippet implementing this function is:
 ![Screenshot](code snippets/get function.png)
 
 3. recent
 
 When `/recent`is visited, the most recently visited 5 sites are displayed. The hook is implemented as follows:
 ![Screenshot](code snippets/recent hook.png)
+
+The recent function is implemented as:
+![Screenshot](code snippets/recent function.png)
 
 
 4. upload
@@ -62,4 +65,8 @@ Redis client is configured as:
 
 ### Proxy server
 
-The proxy server which swaps the request between the two servers is implemented as:
+The proxy server is implemented in the proxy.js file. It swaps between the two servers. The part of the code which does this:
+![Screenshot](code snippets/proxy server.png)
+
+The various request for the various functions (/get, /set, /recent etc.) are handled by the proxy server and directed to the web server alternately. A code snippet for one of the functions is as follows. Similarly, the other function implementations can be found in proxy.js file.
+![Screenshot](code snippets/proxy get function.png)
