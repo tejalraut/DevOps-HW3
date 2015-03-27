@@ -61,6 +61,7 @@ A post function is implemented to handle the post request to the web server.
 
 ### Redis
 Redis client is configured as:
+
 	var redis = require('redis')
 	var client = redis.createClient(6379, '127.0.0.1', {})
 
