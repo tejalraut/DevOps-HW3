@@ -22,6 +22,7 @@ When `/set` is visited, a new key is set with the value:
 > "this message will self-destruct in 10 seconds"
 
 A message 'set function. key is set' is shown to the client. Code snippet:
+[set function.png]
 
 
 2. get
