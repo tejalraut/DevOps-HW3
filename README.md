@@ -15,6 +15,7 @@ Implementation (Option2)
 A simple web server is set as:
 
 The following functions are implemented for a simple web server:
+![Screenshot](code snippets/Simple webserver.png)
 
 1. set
 
@@ -28,11 +29,12 @@ A message 'set function. key is set' is shown to the client. Code snippet:
 2. get
 
 When `/get` is visited, the key is fetched, and value is sent back to the client. After the key is expired, it displays null to the client. The code snippet which does this function is:
-
+![Screenshot](code snippets/get function.png)
 
 3. recent
 
 When `/recent`is visited, the most recently visited 5 sites are displayed. The hook is implemented as follows:
+![Screenshot](code snippets/recent hook.png)
 
 
 4. upload
@@ -44,11 +46,13 @@ Images can be uploaded to any of the web server using the command:
 5. meow
 
 `/meow` displays the most recent uploaded image to the client. The function is implemented as:
+![Screenshot](code snippets/meow function.png)
 
 
 6. remove
 
 `/remove` removes the image from the queue and displays 
+![Screenshot](code snippets/remove function.png)
 
 ### Redis
 Redis client is configured as:
