@@ -57,5 +57,3 @@ Redis client is configured as:
 ### Proxy server
 
 The proxy server which swaps the request between the two servers is implemented as:
-
-
